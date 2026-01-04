@@ -3,9 +3,9 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
-@custom-variant dark (&:is(.dark *));
-
 @theme inline {
+  --font-display: var(--font-instrument-serif);
+
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
@@ -46,8 +46,6 @@
   --radius-2xl: calc(var(--radius) + 8px);
   --radius-3xl: calc(var(--radius) + 12px);
   --radius-4xl: calc(var(--radius) + 16px);
-
-
 }
 
 :root {
@@ -86,8 +84,11 @@
 }
 
 .dark {
-  --background: #090B0B;
-  --foreground: #F2F3F3;
+  --montserrat: var(--font-instrument-serif);
+  --manrope: var(--font-instrument-serif);
+
+  --background: #090b0b;
+  --foreground: #f2f3f3;
   --card: oklch(0.205 0 0);
   --card-foreground: oklch(0.985 0 0);
   --popover: oklch(0.205 0 0);

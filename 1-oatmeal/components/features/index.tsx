@@ -1,13 +1,14 @@
 import Image from "next/image";
 import Container from "../container";
 import { Card, CardButton, CardContent, CardImage, CardTitle } from "./card";
-import Heading from "../heading";
+
 import SubHeading from "../subHeading";
+import { Heading } from "../heading";
 
 const Feature = () => {
   return (
-    <Container className="mt-20">
-      <span className="text-sm font-semibold tracking-tight text-neutral-800 dark:text-neutral-200">
+    <Container>
+      <span className="text-sm font-semibold tracking-tight text-neutral-800 dark:text-neutral-400">
         Powerful features
       </span>
 
@@ -48,7 +49,6 @@ const Feature = () => {
             gradientFrom="from-[#253A42]"
             gradientTo="to-[#233242]"
             position="right"
-
           >
             <Image
               height={1000}

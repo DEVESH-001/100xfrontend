@@ -1,15 +1,16 @@
 import { IconArrowNarrowRight } from "@tabler/icons-react";
 import Container from "./container";
-import Heading from "./heading";
 import SubHeading from "./subHeading";
 import { Button } from "./ui/button";
 import LandingImage from "./landingImage";
 import Link from "next/link";
+import { Badge, Heading } from "./heading";
 
 const Hero = () => {
   return (
-    <section className="pt-10 md:pt-20 lg:pt-32">
+    <section className="pt-10 md:pt-10 lg:pt-16">
       <Container>
+        <Badge text="Oatmeal raises 80M Series A funding" className="mb-8"/>
         <Heading size="h1">
           Customer support that <br /> feels like a conversation.
         </Heading>
