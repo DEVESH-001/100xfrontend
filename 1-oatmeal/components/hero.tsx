@@ -8,7 +8,7 @@ import Link from "next/link";
 
 const Hero = () => {
   return (
-    <div className="pt-10 md:pt-20 lg:pt-32">
+    <section className="pt-10 md:pt-20 lg:pt-32">
       <Container>
         <Heading size="h1">
           Customer support that <br /> feels like a conversation.
@@ -34,7 +34,7 @@ const Hero = () => {
         {/* HeroImage */}
         <LandingImage />
       </Container>
-    </div>
+    </section>
   );
 };
 
