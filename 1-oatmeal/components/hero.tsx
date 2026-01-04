@@ -22,10 +22,10 @@ const Hero = () => {
 
         {/* CTA Buttons will go here */}
         <div className="flex items-center gap-6">
-          <Button className="px-5 py-5 cursor-pointer">Start free trial</Button>
+          <Button className="cursor-pointer px-5 py-5">Start free trial</Button>
           <Link
             href="/how-it-works"
-            className="group inline-flex items-center gap-2 rounded-full px-4 py-3 text-sm font-medium text-neutral-200 transition-all hover:bg-neutral-800/80 hover:text-white"
+            className="group inline-flex items-center gap-2 rounded-full px-4 py-3 text-sm font-medium text-neutral-800 transition-all hover:bg-neutral-400/60 dark:text-neutral-200 hover:dark:bg-neutral-800/80"
           >
             See how it works
             <IconArrowNarrowRight className="size-4 transition-transform group-hover:translate-x-1" />
