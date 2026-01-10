@@ -3,6 +3,7 @@ import { Montserrat } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/navbar";
 import ThemeProvider from "@/providers/themeProvider";
+import { Analytics } from "@vercel/analytics/next";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -52,6 +53,7 @@ export default function RootLayout({
         >
           <main>
             <Navbar />
+            <Analytics />
             {children}
           </main>
         </ThemeProvider>

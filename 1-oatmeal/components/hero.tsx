@@ -10,7 +10,7 @@ const Hero = () => {
   return (
     <section className="pt-10 md:pt-10 lg:pt-16">
       <Container>
-        <Badge text="Oatmeal raises 80M Series A funding" className="mb-8"/>
+        <Badge text="Oatmeal raises 80M Series A funding" className="mb-8" />
         <Heading size="h1">
           Customer support that <br /> feels like a conversation.
         </Heading>
@@ -23,9 +23,14 @@ const Hero = () => {
 
         {/* CTA Buttons will go here */}
         <div className="flex items-center gap-6">
-          <Button className="cursor-pointer px-5 py-5">Start free trial</Button>
+          <Link href="https://devesh.work" target="_blank">
+            <Button className="cursor-pointer px-5 py-5">
+              Start free trial
+            </Button>
+          </Link>
           <Link
-            href="/how-it-works"
+            href="https://agentic-ai-ebon-gamma.vercel.app/"
+            target="_blank"
             className="group inline-flex items-center gap-2 rounded-full px-4 py-3 text-sm font-medium text-neutral-800 transition-all hover:bg-neutral-400/60 dark:text-neutral-200 hover:dark:bg-neutral-800/80"
           >
             See how it works
